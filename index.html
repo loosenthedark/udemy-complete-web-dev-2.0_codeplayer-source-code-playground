@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+  <link rel="stylesheet" href='jquery-ui/styles/style.css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src='jquery-ui/jquery-ui.js'></script>
+
+  <title>CodePlayer</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div id="top-bar-wrapper">
+      <h1>CodePlayer</h1>
+      <div id="top-bar">
+        <button id="html"><span>HTML</span></button>
+        <button id="css"><span>CSS</span></button>
+        <button id="js"><span>JavaScript</span></button>
+        <button id="output"><span>Output</span></button>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div id="code-container-wrapper">
+      <textarea name="html" class="html"><p id="paragraph">Hello, World!</p></textarea>
+      <textarea name="css" class="css">p { color: green; }</textarea>
+      <textarea name="js" class="js">document.getElementById("paragraph").innerHTML = "Hello, Paul!";</textarea>
+      <div name="output" class="output"></div>
+    </div>
+
+  </main>
+
+  <script src='jquery-ui/scripts/script.js'></script>
+
+</body>
+
+</html>
